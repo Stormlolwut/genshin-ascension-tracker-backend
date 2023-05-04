@@ -1,0 +1,10 @@
+name = "gat-javascript"
+main = "src/index.ts"
+compatibility_date = "2023-03-29"
+node_compat = true
+
+kv_namespaces = [
+    { binding = "GAT_ACCOUNTS", preview_id = "0d691811cbdc4f95a5ad957033a0ce5f", id = "0d691811cbdc4f95a5ad957033a0ce5f" },
+    { binding = "GAT_INVENTORY", preview_id = "6241c546e70e49929f6b7d949097c816", id= "6241c546e70e49929f6b7d949097c816"},
+    { binding = "GAT_FAVORITES", preview_id = "21ffbef64955479f85c6aedcc568996a", id="21ffbef64955479f85c6aedcc568996a" }
+]
