@@ -76,9 +76,9 @@ export default {
 
 		if (!body) return new CustomResponse({ message: "Invalid body", status: 400 })
 
-		await args.env.GAT_FAVORITES.put(args.jwt.token, JSON.stringify(body), { metadata: args.jwt.username })
+		const result = await args.env.GAT_FAVORITES.put(args.jwt.token, JSON.stringify(body), { metadata: args.jwt.username })
 
-		return new CustomResponse({ message: "Favorites updated!", status: 200 }).send()
+		return new CustomResponse({ message: "Favorites updated!", status: 200, body: result}).send()
 	},
 	async getFavorites(request: RequestLike, args: any){
 		const result = await args.env.GAT_FAVORITES.get(args.jwt.token)
