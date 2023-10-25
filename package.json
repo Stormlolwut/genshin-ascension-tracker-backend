@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "base64url": "^3.0.1",
-    "crypto-js": "^4.1.1",
+    "crypto-js": "^4.2.0",
     "itty-router": "^3.0.12"
   },
   "devDependencies": {
